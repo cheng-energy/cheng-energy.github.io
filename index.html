@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+    ╔══════════════════════════════════════════╗
+    ║  🔧 替换：下面【你的姓名】              ║
+    ╚══════════════════════════════════════════╝
+    -->
+    <title>【姓名】 · 新能源科学与工程 作品集</title>
+    <meta name="description" content="新能源科学与工程本科生作品集。展示光伏系统仿真、电池热管理、风电数据分析等工程实操项目。">
+
+    <!-- Favicon: 简单的 SVG 闪电图标 -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>⚡</text></svg>">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Preconnect 提前加载 Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Skip to content — 键盘用户可及性 -->
+    <a href="#main-content" class="skip-link">跳转到主内容</a>
+
+    <!-- ========== 导航 ========== -->
+    <!--
+    规范 B7: resting state — 悬浮于顶部、居中、fit-content 宽度、
+    半透明背景 + backdrop-filter 模糊。
+    -->
+    <header class="site-header" id="header">
+        <nav class="nav-container" aria-label="主导航">
+            <a href="#hero" class="nav-logo">⚡ 【姓名】</a>
+
+            <button class="hamburger" id="hamburger" aria-label="切换菜单" aria-expanded="false">
+                <span class="hamburger-box">
+                    <span class="hamburger-line top"></span>
+                    <span class="hamburger-line mid"></span>
+                    <span class="hamburger-line bot"></span>
+                </span>
+            </button>
+
+            <!-- 桌面端水平菜单 / 移动端全高面板 -->
+            <div class="nav-panel" id="navPanel">
+                <ul class="nav-list" id="navList">
+                    <li><a href="#about" class="nav-link">关于我</a></li>
+                    <li><a href="#projects" class="nav-link">项目作品</a></li>
+                    <li><a href="#skills" class="nav-link">技能</a></li>
+                    <li><a href="#learning" class="nav-link">学习记录</a></li>
+                    <li><a href="#contact" class="nav-link">联系</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- ================================================================
+             Section 1 — Hero
+             规范 B5: Heading 1 (60/60 Semibold) · 680px max-width
+             规范 B5 dark theme: #FFFFFF → #9B9B9B 左到右文字渐变
+             规范 B1: no hyphens · sentence case
+             ================================================================ -->
+        <section class="hero" id="hero">
+            <div class="hero-inner">
+                <!--
+                ╔══════════════════════════════════════════╗
+                ║  🔧 替换：姓名                          ║
+                ╚══════════════════════════════════════════╝
+                -->
+                <h1 class="hero-heading">
+                    新能源工程，<br>从课堂到项目
+                </h1>
+                <p class="hero-subhead">
+                    光伏系统仿真、电池热管理、风电数据分析 —— 一个本科生的工程实践记录
+                </p>
+                <p class="hero-proof">
+                    <!--
+                    ╔══════════════════════════════════════════╗
+                    ║  🔧 替换：真实项目数量                  ║
+                    ╚══════════════════════════════════════════╝
+                    -->
+                    【你的大学名称】新能源科学与工程 · 3 个课程/个人项目 · 2 年技术积累
+                </p>
+                <div class="hero-actions">
+                    <!--
+                    ╔══════════════════════════════════════════╗
+                    ║  🔧 替换：简历 PDF 路径                ║
+                    ╚══════════════════════════════════════════╝
+                    -->
+                    <a href="#" class="btn btn-primary glass-btn" download>
+                        下载简历
+                    </a>
+                    <!--
+                    ╔══════════════════════════════════════════╗
+                    ║  🔧 替换：GitHub 链接                  ║
+                    ╚══════════════════════════════════════════╝
+                    -->
+                    <a href="https://github.com/【GitHub用户名】" class="btn btn-secondary glass-btn" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                        GitHub
+                    </a>
+                </div>
+                <!--
+                ╔══════════════════════════════════════════╗
+                ║  🔧 替换：姓名                          ║
+                ╚══════════════════════════════════════════╝
+                -->
+                <p class="hero-address">【姓名】 — 【你的大学名称】</p>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             Section 2 — 项目作品 (Benefits)
+             这是页面核心论证，不是简单的卡片列表。
+             规范：每个项目卡展示 outcome（成果），不是 feature 清单。
+             ================================================================ -->
+        <section class="section" id="projects">
+            <div class="container">
+                <h2 class="section-title">项目作品</h2>
+                <p class="section-subtitle">课程设计、仿真分析、数据处理 —— 能动手才是硬道理</p>
+
+                <div class="projects-grid">
+                    <!--
+                    ╔══════════════════════════════════════════╗
+                    ║  🔧 替换：所有【】占位内容              ║
+                    ║  可增减项目卡片                        ║
+                    ╚══════════════════════════════════════════╝
+                    -->
+
+                    <!-- 项目 1 -->
+                    <article class="project-card glass">
+                        <div class="project-badge">课程设计</div>
+                        <h3 class="project-title">光伏 MPPT 控制策略仿真对比</h3>
+                        <p class="project-date">【2025 年 3 月 — 6 月】</p>
+                        <div class="project-outcome">
+                            <p><strong>做了什么：</strong>【我的工作】使用 MATLAB/Simulink 搭建光伏阵列模型，实现扰动观察法（P&O）与电导增量法（IncCond）两种 MPPT 算法。编写局部阴影工况脚本，对比追踪速度与稳态精度。</p>
+                            <p><strong>结果：</strong>【成果】P&O 算法均匀光照下追踪效率超 99%，局部阴影下 IncCond 稳态功率波动降低约 15%。</p>
+                        </div>
+                        <div class="project-tags">
+                            <span>MATLAB</span><span>Simulink</span><span>MPPT</span>
+                        </div>
+                        <div class="project-links">
+                            <!--
+                            ╔══════════════════════════════════════════╗
+                            ║  🔧 替换：真实链接                      ║
+                            ╚══════════════════════════════════════════╝
+                            -->
+                            <a href="#" class="btn btn-sm btn-secondary glass-btn">代码仓库</a>
+                            <a href="#" class="btn btn-sm btn-secondary glass-btn">课程报告</a>
+                        </div>
+                    </article>
+
+                    <!-- 项目 2 -->
+                    <article class="project-card glass">
+                        <div class="project-badge">课程设计</div>
+                        <h3 class="project-title">锂离子电池模组热管理仿真</h3>
+                        <p class="project-date">【2025 年 9 月 — 12 月】</p>
+                        <div class="project-outcome">
+                            <p><strong>做了什么：</strong>【我的工作】使用 ANSYS Fluent 建立 18650 电池模组三维热模型，对比自然冷却、强制风冷、液冷三种散热方案，参数化扫描冷却液流速与入口温度。</p>
+                            <p><strong>结果：</strong>【成果】液冷方案将最高温度控制在 38°C 以内，模组温差小于 5°C，仿真与文献偏差低于 10%。</p>
+                        </div>
+                        <div class="project-tags">
+                            <span>ANSYS Fluent</span><span>热管理</span><span>Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-secondary glass-btn">代码仓库</a>
+                            <a href="#" class="btn btn-sm btn-secondary glass-btn">设计报告</a>
+                        </div>
+                    </article>
+
+                    <!-- 项目 3 -->
+                    <article class="project-card glass">
+                        <div class="project-badge badge-alt">个人项目</div>
+                        <h3 class="project-title">风电场 SCADA 数据清洗与故障预警</h3>
+                        <p class="project-date">【2026 年 1 月 — 至今】</p>
+                        <div class="project-outcome">
+                            <p><strong>做了什么：</strong>【我的工作】Python 清洗公开 SCADA 数据集，绘制功率曲线并做 Bin 拟合，训练随机森林模型对齿轮箱故障做二分类预警，输出特征重要性排名。</p>
+                            <p><strong>结果：</strong>【成果】功率曲线与出厂曲线偏差低于 3%，故障预警准确率 92%，齿轮箱油温为首要特征。项目在 GitHub 开源。</p>
+                        </div>
+                        <div class="project-tags">
+                            <span>Python</span><span>pandas</span><span>scikit-learn</span><span>SCADA</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-secondary glass-btn">代码仓库</a>
+                            <a href="#" class="btn btn-sm btn-secondary glass-btn">分析笔记</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             Section 3 — Tagline Reveal (B11 强制)
+             规范 B11: Heading 3 至 Heading 1, 680px max, 多行,
+             word-by-word opacity 0.25->1 on scroll.
+             ================================================================ -->
+        <section class="section section-alt tagline-section" id="tagline">
+            <div class="container">
+                <h2 class="tagline-text" id="taglineText">
+                    动手，验证，记录。<br>
+                    从仿真模型到真实数据，每一行代码都在说：我能做。
+                </h2>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             Section 4 — 技能 (How it works)
+             ================================================================ -->
+        <section class="section" id="skills">
+            <div class="container">
+                <h2 class="section-title">技能</h2>
+                <p class="section-subtitle">诚实标注熟练度，持续更新</p>
+                <div class="skills-grid">
+
+                    <div class="skill-category glass">
+                        <h3 class="skill-cat-title">编程与仿真</h3>
+                        <!--
+                        ╔══════════════════════════════════════════╗
+                        ║  🔧 替换：真实技能与水平                ║
+                        ╚══════════════════════════════════════════╝
+                        -->
+                        <div class="skill-row">
+                            <div class="skill-info">
+                                <span class="skill-name">MATLAB / Simulink</span>
+                                <span class="skill-level">熟练</span>
+                            </div>
+                            <div class="skill-track"><div class="skill-fill" style="width:75%"></div></div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-info">
+                                <span class="skill-name">Python（pandas, numpy, matplotlib）</span>
+                                <span class="skill-level">熟练</span>
+                            </div>
+                            <div class="skill-track"><div class="skill-fill" style="width:70%"></div></div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-info">
+                                <span class="skill-name">C 语言</span>
+                                <span class="skill-level">基础</span>
+                            </div>
+                            <div class="skill-track"><div class="skill-fill" style="width:40%"></div></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category glass">
+                        <h3 class="skill-cat-title">专业工具</h3>
+                        <div class="skill-row">
+                            <div class="skill-info">
+                                <span class="skill-name">ANSYS Fluent</span>
+                                <span class="skill-level">熟悉</span>
+                            </div>
+                            <div class="skill-track"><div class="skill-fill" style="width:55%"></div></div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-info">
+                                <span class="skill-name">PVsyst</span>
+                                <span class="skill-level">熟悉</span>
+                            </div>
+                            <div class="skill-track"><div class="skill-fill" style="width:55%"></div></div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-info">
+                                <span class="skill-name">AutoCAD</span>
+                                <span class="skill-level">基础</span>
+                            </div>
+                            <div class="skill-track"><div class="skill-fill" style="width:45%"></div></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category glass">
+                        <h3 class="skill-cat-title">办公与文档</h3>
+                        <div class="skill-row">
+                            <div class="skill-info">
+                                <span class="skill-name">Office（Word, Excel, PPT）</span>
+                                <span class="skill-level">熟练</span>
+                            </div>
+                            <div class="skill-track"><div class="skill-fill" style="width:80%"></div></div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-info">
+                                <span class="skill-name">LaTeX 文档撰写</span>
+                                <span class="skill-level">熟悉</span>
+                            </div>
+                            <div class="skill-track"><div class="skill-fill" style="width:55%"></div></div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-info">
+                                <span class="skill-name">Git</span>
+                                <span class="skill-level">基础</span>
+                            </div>
+                            <div class="skill-track"><div class="skill-fill" style="width:40%"></div></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category glass">
+                        <h3 class="skill-cat-title">语言</h3>
+                        <div class="skill-row">
+                            <div class="skill-info">
+                                <span class="skill-name">英语</span>
+                                <!--
+                                ╔══════════════════════════════════════════╗
+                                ║  🔧 替换：CET 等级                      ║
+                                ╚══════════════════════════════════════════╝
+                                -->
+                                <span class="skill-level">【CET-4 / CET-6】</span>
+                            </div>
+                            <div class="skill-track"><div class="skill-fill" style="width:60%"></div></div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-info">
+                                <span class="skill-name">中文</span>
+                                <span class="skill-level">母语</span>
+                            </div>
+                            <div class="skill-track"><div class="skill-fill" style="width:100%"></div></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             Section 5 — 学习记录 (Proof)
+             时间线 = 教育轨迹作为可信度信号
+             ================================================================ -->
+        <section class="section section-alt" id="learning">
+            <div class="container">
+                <h2 class="section-title">学习记录</h2>
+                <p class="section-subtitle">课程、证书与自我提升的轨迹</p>
+
+                <div class="timeline">
+                    <!--
+                    ╔══════════════════════════════════════════╗
+                    ║  🔧 替换：真实课程名、成绩、摘要        ║
+                    ║  按时间倒序排列                        ║
+                    ╚══════════════════════════════════════════╝
+                    -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-body glass">
+                            <time class="timeline-date">2025 秋季</time>
+                            <h3 class="timeline-title">光伏发电系统</h3>
+                            <p class="timeline-sub">专业核心课 · 成绩：【XX】</p>
+                            <p class="timeline-desc">学习光伏电池物理模型与电站设计方法，完成光伏 MPPT 仿真课程设计。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-body glass">
+                            <time class="timeline-date">2025 春季</time>
+                            <h3 class="timeline-title">传热学</h3>
+                            <p class="timeline-sub">专业基础课 · 成绩：【XX】</p>
+                            <p class="timeline-desc">掌握导热、对流、辐射数学模型，为电池热管理课程设计奠定理论基础。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-body glass">
+                            <time class="timeline-date">2024 秋季</time>
+                            <h3 class="timeline-title">工程数学</h3>
+                            <p class="timeline-sub">公共基础课 · 线性代数+概率统计 · 成绩：【XX】</p>
+                            <p class="timeline-desc">能够用矩阵运算与统计方法解决工程问题，为数据分析项目打下数学基础。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-body glass">
+                            <time class="timeline-date">【202X 年】</time>
+                            <h3 class="timeline-title">【证书名称】</h3>
+                            <p class="timeline-sub">【如：全国计算机等级考试 / CET-6】</p>
+                            <p class="timeline-desc">【一句话说明证书内容】</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             Section 6 — 关于我
+             简要背景，不重复其余区块内容
+             ================================================================ -->
+        <section class="section" id="about">
+            <div class="container">
+                <h2 class="section-title">关于我</h2>
+                <div class="about-grid">
+                    <div class="about-block glass">
+                        <h3 class="about-label">教育</h3>
+                        <!--
+                        ╔══════════════════════════════════════════╗
+                        ║  🔧 替换：学校、年级、GPA              ║
+                        ╚══════════════════════════════════════════╝
+                        -->
+                        <p>【你的大学名称】，新能源科学与工程，【20XX 级】本科在读。预计【20XX 年 6 月】毕业。GPA 【X.X/4.0】。</p>
+                    </div>
+                    <div class="about-block glass">
+                        <h3 class="about-label">方向</h3>
+                        <p>目标岗位：【光伏系统工程师 / 风电运维 / 储能技术岗】。意向行业：新能源发电、储能、新能源汽车。期望城市：【你的城市】。</p>
+                    </div>
+                    <div class="about-block glass">
+                        <h3 class="about-label">兴趣</h3>
+                        <p>光伏系统建模与 MPPT 控制、锂离子电池热管理与寿命预测、风资源评估、储能系统能量管理（EMS）。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             Section 7 — 联系 (Final CTA)
+             ================================================================ -->
+        <section class="section section-alt" id="contact">
+            <div class="container">
+                <h2 class="section-title">联系我</h2>
+                <p class="section-subtitle">欢迎技术交流与实习机会</p>
+                <div class="contact-row">
+                    <!--
+                    ╔══════════════════════════════════════════╗
+                    ║  🔧 替换：邮箱                          ║
+                    ╚══════════════════════════════════════════╝
+                    -->
+                    <a href="mailto:【your-email@example.com】" class="contact-item glass">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        <span>【your-email@example.com】</span>
+                    </a>
+                    <!--
+                    ╔══════════════════════════════════════════╗
+                    ║  🔧 替换：GitHub 链接                  ║
+                    ╚══════════════════════════════════════════╝
+                    -->
+                    <a href="https://github.com/【GitHub用户名】" class="contact-item glass" target="_blank" rel="noopener noreferrer">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        <span>@【GitHub用户名】</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== 页脚 ========== -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <!--
+            ╔══════════════════════════════════════════╗
+            ║  🔧 替换：姓名、更新日期                ║
+            ╚══════════════════════════════════════════╝
+            -->
+            <span class="footer-copy">&copy; 【姓名】 <span id="currentYear">2024</span></span>
+            <span class="footer-dot">·</span>
+            <span class="footer-update">更新于 <time datetime="2024-01-01">【202X 年 X 月】</time></span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
